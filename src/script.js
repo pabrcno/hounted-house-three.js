@@ -25,32 +25,40 @@ scene.fog = fog;
  */
 const textureLoader = new THREE.TextureLoader();
 //door
-const doorColorTexture = textureLoader.load("/textures/door/color.jpg");
-const doorAlphaTexture = textureLoader.load("/textures/door/alpha.jpg");
+const doorColorTexture = textureLoader.load("dist/textures/door/color.jpg");
+const doorAlphaTexture = textureLoader.load("dist/textures/door/alpha.jpg");
 const doorAmbientOcclusionTexture = textureLoader.load(
-  "/textures/door/ambientOcclusion.jpg"
+  "dist/textures/door/ambientOcclusion.jpg"
 );
-const doorHeightTexture = textureLoader.load("/textures/door/height.jpg");
-const doorNormalTexture = textureLoader.load("/textures/door/normal.jpg");
-const doorMetalnessTexture = textureLoader.load("/textures/door/metalness.jpg");
-const doorRoughnessTexture = textureLoader.load("/textures/door/roughness.jpg");
+const doorHeightTexture = textureLoader.load("dist/textures/door/height.jpg");
+const doorNormalTexture = textureLoader.load("dist/textures/door/normal.jpg");
+const doorMetalnessTexture = textureLoader.load(
+  "dist/textures/door/metalness.jpg"
+);
+const doorRoughnessTexture = textureLoader.load(
+  "dist/textures/door/roughness.jpg"
+);
 //walls
-const bricksColorTexture = textureLoader.load("/textures/bricks/oldWood.jpg");
-const bricksAmbientOcclusionTexture = textureLoader.load(
-  "/textures/bricks/ambientOcclusion.jpg"
+const bricksColorTexture = textureLoader.load(
+  "dist/textures/bricks/oldWood.jpg"
 );
-const bricksNormalTexture = textureLoader.load("/textures/bricks/normal.jpg");
+const bricksAmbientOcclusionTexture = textureLoader.load(
+  "dist/textures/bricks/ambientOcclusion.jpg"
+);
+const bricksNormalTexture = textureLoader.load(
+  "dist/textures/bricks/normal.jpg"
+);
 const bricksRoughnessTexture = textureLoader.load(
-  "/textures/bricks/roughness.jpg"
+  "dist/textures/bricks/roughness.jpg"
 );
 //floor
-const grassColorTexture = textureLoader.load("/textures/grass/color.jpg");
+const grassColorTexture = textureLoader.load("dist/textures/grass/color.jpg");
 const grassAmbientOcclusionTexture = textureLoader.load(
-  "/textures/grass/ambientOcclusion.jpg"
+  "dist/textures/grass/ambientOcclusion.jpg"
 );
-const grassNormalTexture = textureLoader.load("/textures/grass/normal.jpg");
+const grassNormalTexture = textureLoader.load("dist/textures/grass/normal.jpg");
 const grassRoughnessTexture = textureLoader.load(
-  "/textures/grass/roughness.jpg"
+  "dist/textures/grass/roughness.jpg"
 );
 
 grassColorTexture.repeat.set(8, 8);
@@ -68,21 +76,23 @@ grassNormalTexture.wrapT = THREE.RepeatWrapping;
 grassRoughnessTexture.wrapT = THREE.RepeatWrapping;
 
 //roof
-const roofColorTexture = textureLoader.load("/textures/roof/color.jpg");
+const roofColorTexture = textureLoader.load("dist/textures/roof/color.jpg");
 const roofAmbientOcclusionTexture = textureLoader.load(
-  "/textures/roof/ambientOcclusion.jpg"
+  "dist/textures/roof/ambientOcclusion.jpg"
 );
-const roofNormalTexture = textureLoader.load("/textures/roof/normal.jpg");
-const roofRoughnessTexture = textureLoader.load("/textures/roof/roughness.jpg");
+const roofNormalTexture = textureLoader.load("dist/textures/roof/normal.jpg");
+const roofRoughnessTexture = textureLoader.load(
+  "dist/textures/roof/roughness.jpg"
+);
 
 //grave
-const graveColorTexture = textureLoader.load("/textures/grave/color.jpg");
+const graveColorTexture = textureLoader.load("dist/textures/grave/color.jpg");
 const graveAmbientOcclusionTexture = textureLoader.load(
-  "/textures/grave/ambientOcclusion.jpg"
+  "dist/textures/grave/ambientOcclusion.jpg"
 );
-const graveNormalTexture = textureLoader.load("/textures/grave/normal.jpg");
+const graveNormalTexture = textureLoader.load("dist/textures/grave/normal.jpg");
 const graveRoughnessTexture = textureLoader.load(
-  "/textures/grave/roughness.jpg"
+  "dist/textures/grave/roughness.jpg"
 );
 /**
  * House
